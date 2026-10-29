@@ -21,7 +21,8 @@ class RF4Plugin(Star):
             return "请在指令后填写鱼名、装备名或地图名。"
         try:
             path = str(self.config.get("data_file", "")).strip()
-            data = load_data(Path(path) if path else self.data_dir / "rf4_data.json")
+            local_file = Path(path) if path else self.data_dir / "rf4_data.json"
+            data = load_data(local_file if local_file.exists() else Path(__file__).parent / "data" / "fish_snapshot.json") if not path else load_data(local_file)
             matches = search(data, category, query)
         except (OSError, ValueError, UnicodeError):
             logger.warning("RF4 数据文件读取失败，请检查文件格式和路径。")

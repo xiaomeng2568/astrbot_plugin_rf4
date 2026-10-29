@@ -56,6 +56,15 @@ class LookupTests(unittest.TestCase):
         self.assertNotIn('白北鲑 & x', result)
         self.assertIn('%26', result)
 
+    def test_packaged_snapshot_is_attributed_and_dated(self):
+        data = load_data(Path(__file__).resolve().parents[1] / 'data' / 'fish_snapshot.json')
+        self.assertGreaterEqual(len(data['fish']), 10)
+        for row in data['fish']:
+            self.assertTrue(row.get('source'))
+            self.assertTrue(row.get('updated_at'))
+            self.assertTrue(row.get('trophy'))
+            self.assertTrue(row.get('blue'))
+
 
 if __name__ == '__main__':
     unittest.main()
