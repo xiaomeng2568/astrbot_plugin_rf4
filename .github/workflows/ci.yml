@@ -1,5 +1,7 @@
 name: 插件测试
 on: [push, pull_request]
+permissions:
+  contents: read
 jobs:
   tests:
     strategy:
@@ -14,3 +16,33 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: 运行离线测试
         run: python -m unittest discover -s tests -v
+  preview-release:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: tests
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 检查预览版版本
+        id: version
+        run: |
+          if grep -qx 'version: v0.0.1-preview' metadata.yaml; then
+            echo 'publish=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: 打包插件
+        if: steps.version.outputs.publish == 'true'
+        run: python .github/scripts/package.py
+      - name: 发布预览版
+        if: steps.version.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v0.0.1-preview >/dev/null 2>&1; then
+            echo '预览版已经存在，保留已有发行版。'
+            exit 0
+          fi
+          gh release create v0.0.1-preview dist/astrbot_plugin_rf4-v0.0.1-preview.zip dist/astrbot_plugin_rf4-v0.0.1-preview.zip.sha256 --target "$GITHUB_SHA" --prerelease --title 'v0.0.1-preview · 俄钓查询预览版' --notes-file .github/release-notes-preview.md
