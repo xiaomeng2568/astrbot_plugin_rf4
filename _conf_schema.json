@@ -1,0 +1,4 @@
+{
+  "data_file": {"description": "数据文件路径", "type": "string", "default": "", "hint": "留空使用插件数据目录中的 rf4_data.json"},
+  "group_enabled": {"description": "允许群聊查询", "type": "bool", "default": true}
+}

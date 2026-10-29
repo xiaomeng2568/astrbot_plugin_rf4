@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.venv/
+rf4_data.json
+.pytest_cache/
+dist/
