@@ -58,12 +58,19 @@ class LookupTests(unittest.TestCase):
 
     def test_packaged_snapshot_is_attributed_and_dated(self):
         data = load_data(Path(__file__).resolve().parents[1] / 'data' / 'fish_snapshot.json')
-        self.assertGreaterEqual(len(data['fish']), 10)
+        self.assertEqual(len(data['fish']), 252)
+        names = [row['name'] for row in data['fish']]
+        self.assertEqual(len(names), len(set(names)))
+        unknown = {'叉牙楔齿七鳃鳗', '黑尾叉牙七鳃鳗', '雷氏七鳃鳗', '小欧鳊'}
         for row in data['fish']:
             self.assertTrue(row.get('source'))
             self.assertTrue(row.get('updated_at'))
-            self.assertTrue(row.get('trophy'))
-            self.assertTrue(row.get('blue'))
+            for field in ('trophy', 'blue'):
+                value = row.get(field, '')
+                if not value:
+                    self.assertIn(row['name'], unknown)
+                else:
+                    self.assertRegex(value, r'^\d+(?:\.\d+)? (?:g|kg)$')
 
 
 if __name__ == '__main__':
