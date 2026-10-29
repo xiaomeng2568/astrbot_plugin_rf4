@@ -1,0 +1,16 @@
+{
+  "fish": [
+    {"name":"白北鲑","aliases":["Nelma"],"trophy":"25 kg","blue":"30 kg","map":"下通古斯卡河","source":"俄钓4数据库 https://rf4db.com/zh/fishes/nelma","updated_at":"2026-10-29","prices":[]},
+    {"name":"奥斯特罗格白鲑","aliases":["Ostrog Whitefish"],"trophy":"3 kg","blue":"4 kg","map":"旧奥斯特罗格湖","source":"俄钓4数据库 https://rf4db.com/zh/fishes/sig_ostr","updated_at":"2026-10-29","prices":[]},
+    {"name":"白斑红点鲑","aliases":["Whitespotted Char"],"trophy":"10 kg","blue":"14 kg","map":"亚马河","source":"俄钓4数据库 https://rf4db.com/zh/fishes/kunja","updated_at":"2026-10-29","prices":[]},
+    {"name":"白斑角鲨","aliases":["Spiny dogfish"],"trophy":"7 kg","blue":"10 kg","map":"挪威海","source":"俄钓4数据库 https://rf4db.com/zh/fishes/katran","updated_at":"2026-10-29","prices":[]},
+    {"name":"白刺盖太阳鱼","aliases":["White crappie"],"trophy":"1.35 kg","blue":"2 kg","map":"埃尔克湖","source":"俄钓4数据库 https://rf4db.com/zh/fishes/white_crappie","updated_at":"2026-10-29","prices":[]},
+    {"name":"白鲑鱼","aliases":["Beloribitsa Whitefish"],"trophy":"15 kg","blue":"25 kg","map":"阿赫图巴河","source":"俄钓4数据库 https://rf4db.com/zh/fishes/wfish","updated_at":"2026-10-29","prices":[]},
+    {"name":"欧鳊","aliases":["Bream"],"trophy":"4.4 kg","blue":"7 kg","source":"俄钓4数据库 https://rf4db.com/zh/fishes/bream","updated_at":"2026-10-29","prices":[]},
+    {"name":"镜鲤","aliases":["Mirror Carp"],"trophy":"25 kg","blue":"40 kg","source":"俄钓4数据库 https://rf4db.com/zh/fishes/m_carp","updated_at":"2026-10-29","prices":[]},
+    {"name":"银鲫","aliases":["Gibel Carp"],"trophy":"1.9 kg","blue":"3.2 kg","source":"俄钓4数据库 https://rf4db.com/zh/fishes/crucian","updated_at":"2026-10-29","prices":[]},
+    {"name":"常见狗鱼","aliases":["Pike","狗鱼"],"trophy":"12 kg","blue":"20 kg","source":"俄钓4数据库 https://rf4db.com/zh/fishes/n.pike","updated_at":"2026-10-29","prices":[]}
+  ],
+  "spots": [],
+  "equipment": []
+}
