@@ -46,3 +46,33 @@ jobs:
             exit 0
           fi
           gh release create v0.0.1-preview dist/astrbot_plugin_rf4-v0.0.1-preview.zip dist/astrbot_plugin_rf4-v0.0.1-preview.zip.sha256 --target "$GITHUB_SHA" --prerelease --title 'v0.0.1-preview · 俄钓查询预览版' --notes-file .github/release-notes-preview.md
+  release-010:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: tests
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 检查发行版版本
+        id: version
+        run: |
+          if grep -qx 'version: v0.1.0' metadata.yaml; then
+            echo 'publish=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: 打包插件
+        if: steps.version.outputs.publish == 'true'
+        run: python .github/scripts/package.py v0.1.0
+      - name: 发布 v0.1.0
+        if: steps.version.outputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v0.1.0 >/dev/null 2>&1; then
+            echo '发行版已经存在，保留已有发行版。'
+            exit 0
+          fi
+          gh release create v0.1.0 dist/astrbot_plugin_rf4-v0.1.0.zip dist/astrbot_plugin_rf4-v0.1.0.zip.sha256 --target "$GITHUB_SHA" --title 'v0.1.0 · 俄钓鱼种查询' --notes-file .github/release-notes-010.md
