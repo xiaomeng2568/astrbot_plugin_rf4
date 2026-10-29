@@ -1,7 +1,7 @@
 name: astrbot_plugin_rf4
 display_name: 俄钓查询
 desc: 查询俄罗斯钓鱼4鱼种、奖杯线、蓝冠线与用户维护的鱼市价格。
-version: v0.0.0-dev
+version: v0.0.1-preview
 author: xiaomeng2568
 repo: https://github.com/xiaomeng2568/astrbot_plugin_rf4
 astrbot_version: ">=4.25.3"
