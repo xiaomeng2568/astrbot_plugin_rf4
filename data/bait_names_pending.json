@@ -1,0 +1,902 @@
+{
+  "updated_at": "2026-10-30",
+  "entries": [
+    {
+      "id": "bait_3957c0d8d8f8f17a",
+      "en": "Active W-Stick 2.5-02",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_38b721f9562c11aa",
+      "en": "AngryWalker S8-004",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_fac44329343a5382",
+      "en": "Atlantic Salmon Pellets 18",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_70dc16472c96e74f",
+      "en": "Baby Craw 3.5 002",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_5ca965d96dbfd8ea",
+      "en": "Balsa Joined 80S-003",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_b41368d99350a971",
+      "en": "Balsa Minnow 140F-003",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_0ba4d95e7f69d22e",
+      "en": "Balsa Minnow 90F-006",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_2c5bbe41a0ce675a",
+      "en": "Balsa walker 65F-005",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_2405dbb21082a641",
+      "en": "Black-headed Worm \"Moscow Variation\"",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_5e42495625e5bfe8",
+      "en": "Bluegill",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_760e577732342cf4",
+      "en": "Brandling Worm \"Astrakhan Variation\"",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_ebdbfcc8ab8dd569",
+      "en": "Brandling Worm \"Volkhov Variation\"",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_56a653c5d67438d6",
+      "en": "Chipmunk 60",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_45d371751d95203b",
+      "en": "Crab & Fish Pellets 14",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_d779a707641a2876",
+      "en": "Crab Flavor",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_b838c4d3dfab1bea",
+      "en": "Flying worm 140 - 04",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_fe385716015b90db",
+      "en": "Foam-rubber fish 002",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_9c3ce8081daf8992",
+      "en": "Foam-rubber fish 004",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": "纪录未区分HQ/LQ，不能安全对应品质变体。"
+    },
+    {
+      "id": "bait_7a92c71317c60a85",
+      "en": "Fresh Cranberry 20",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_1d305e212fbb404f",
+      "en": "Fresh Raspberry Pop-Up 20",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_4261f57993706379",
+      "en": "Freshwater krill 18",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_a3b118d57dffd2f6",
+      "en": "Freshwater Krill Pellets 25",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_68c2dfacef89c9f5",
+      "en": "Gibel Carp",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_2878d8399b87310c",
+      "en": "Gizzard Shad",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_50207bfe5be8618a",
+      "en": "Grass Cake Pellets 18",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_cad48c098f62333d",
+      "en": "Hijacker slim 7SP-002",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_fad7c33813040c1a",
+      "en": "Honey 20",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_f41bfb08ebb229b6",
+      "en": "Honey Cream 18",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_2c4dad8b94b3fee9",
+      "en": "Hornet #1 005",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_2865261ad22d6b51",
+      "en": "Hunter 1000-5",
+      "missing": [
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_b75bd1ccba774a8d",
+      "en": "Invader 60-5 - 008",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_593c8e384ac9eef9",
+      "en": "Jiggmeister DC 1000",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_b67e73b0ea0f958c",
+      "en": "Jiggmeister DC 110",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_915ce53b9872c53e",
+      "en": "King Stick 2.5-02",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_cc87cd82b5e4d052",
+      "en": "Lamprey",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_628082787c7f6b2a",
+      "en": "Lobster 3.5 001",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_16f905fd96acfb48",
+      "en": "Lobster 3.5 004",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_422e51dc4a851c7a",
+      "en": "Lobster 3.5 008",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_963281829b60d17a",
+      "en": "Lugworm",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_aab887867d0a4625",
+      "en": "Lurker 100-07",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_1d14886124d80794",
+      "en": "Lurker 100-08",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_515ddd8ffdd86c20",
+      "en": "Lurker 200-04",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_969768736eb5e743",
+      "en": "Lurker 400-02",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_94427565c7f151ff",
+      "en": "Lynns Huge Minnow 120-002",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_0a8b293e7a45fd2b",
+      "en": "Lynns Huge Minnow 120-005",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_1f657514a0d09e31",
+      "en": "Mouse Black 35",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_039af4f1a4cac0df",
+      "en": "Mouse White 35",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_bca78e223e44e467",
+      "en": "Nasty Worm 4.5-001",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_53d75069d656bb4d",
+      "en": "Nasty Worm 4.5-008",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_4b7735e8f70621bb",
+      "en": "Natural Shrimp 7.5 - 08",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_12826ef4d27cd626",
+      "en": "Natural Squid - 23 - 02",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_7779cdb215e9c886",
+      "en": "Natural Squid - 23 - 03",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_705985bc5c54b26d",
+      "en": "Natural Squid - 23 - 05",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_52a61a78ed66a904",
+      "en": "Natural Squid - 23 - 06",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_2f0cf3344d895450",
+      "en": "Natural Squid - 23 - 07",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_da286bb149a88204",
+      "en": "Natural Squid - 23 - 08",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_a01aef086d01a46a",
+      "en": "Natural Squid - 23 - 09",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_d1c35b3fcd92bf39",
+      "en": "Nereis",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_a31ae17f232d7806",
+      "en": "Neutral 20",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_0161822b560a4694",
+      "en": "Neutral 25",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_abb1a846985bf7b9",
+      "en": "Ocean Krill 20 Pop-Up",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_e12dc686a7c868b6",
+      "en": "Orig Crank 9-003",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_76e09d6326c09d87",
+      "en": "Orig Crank 9-006",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_7395a920e63c3f4b",
+      "en": "Peach Pellets 14",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_4c8bbc3a7bad8f40",
+      "en": "Pearl barley",
+      "missing": [
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_c6cd6bc49e0d72f1",
+      "en": "Pepper & Mussels Pellets 24",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_b50d1d4f359be135",
+      "en": "Perfect Craw 3.5 002",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_dba20849db02749f",
+      "en": "Perfect Craw 3.5 004",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_a3ba7af9c27acaf1",
+      "en": "Perfect Craw 3.5 005",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_0b142acfcc40b817",
+      "en": "Quicker 4.5-005",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_a443962878d41031",
+      "en": "Quicker 4.5-007",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_5a285c52e26b8aed",
+      "en": "RealShrimp 6.5 - 03",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_db789e43fd9d1d40",
+      "en": "RealShrimp 6.5 - 06",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_84f789e8ebdff7c5",
+      "en": "RealSquid - 12 - 08",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_95cf483c4e4b7e4c",
+      "en": "RealSquid - 26 - 04",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_a2438164d2d04af9",
+      "en": "RealSquid - 26 - 07",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_5a18bfa62cffcc75",
+      "en": "Salmon & Herbs 26",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_6b52448ac7a1dbee",
+      "en": "Salmon T1 Shad 12 009",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_8622a4765826a057",
+      "en": "Solvpilk 1000",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_b4bbb1151553eeda",
+      "en": "Soturi 22g-003",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_f71ff9fab8859451",
+      "en": "Soturi 22g-009",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_69b1c1d9f7455618",
+      "en": "Soturi 46g-010",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_89b6b3f59fd43f9d",
+      "en": "Spiker #2 018",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_6288d65b7cea37af",
+      "en": "Spinnerbait #1 005",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_90d2f0c4c4e6bacc",
+      "en": "Squirrel 60",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_9f1458ac0318a375",
+      "en": "Stor Fisk M25-600 #11",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_f6c2c39266ef6a24",
+      "en": "Stor Fisk M25-600 #17",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_df146a878a6a7b6f",
+      "en": "Stor Fisk M25-600 #6",
+      "missing": [
+        "zh"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_4c39e9e3ef40a1d5",
+      "en": "Sweet cream Soluble 20",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_27d358d227973495",
+      "en": "Tiny Fish 4-005",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_5a3025f035b9ef7b",
+      "en": "Tiny Fish 7-006",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_89ccf65af60b5c94",
+      "en": "Tuna 20",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_715ce3fa8e7824d1",
+      "en": "Tutti Frutti 20",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_a2cb586f5d3439a3",
+      "en": "Tutti Frutti 25",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_cc202448b2475856",
+      "en": "Type 4 3.5g 003",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_a4be541f6019ac21",
+      "en": "ULF Crank 3-002",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_a62149d5ce757214",
+      "en": "Vanilla 20 Explosive",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_07cfbe24e8460f87",
+      "en": "Veikko 25g-011",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_0405ded48f4dbd9a",
+      "en": "White chocolate 25",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    },
+    {
+      "id": "bait_4022526195e95def",
+      "en": "X-Shad F95-08",
+      "missing": [
+        "zh",
+        "ru"
+      ],
+      "note": ""
+    }
+  ]
+}
