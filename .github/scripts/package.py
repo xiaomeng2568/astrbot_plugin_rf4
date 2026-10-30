@@ -7,10 +7,10 @@ from zipfile import ZIP_DEFLATED, ZipFile
 ROOT = Path(__file__).resolve().parents[2]
 FILES = [
     'main.py', 'rf4.py', 'metadata.yaml', '_conf_schema.json',
-    'README.md', 'LICENSE', 'rf4_data.example.json', 'data/fish_snapshot.json',
+    'README.md', 'LICENSE', 'DATA_SOURCES.md', 'data/missing_fields.json', 'data_audit.py', 'rf4_data.example.json', 'data/fish_snapshot.json',
 ]
 version = sys.argv[1] if len(sys.argv) > 1 else 'v0.0.1-preview'
-if version not in {'v0.0.1-preview', 'v0.1.0'} or len(sys.argv) > 2:
+if version not in {'v0.0.1-preview', 'v0.1.0', 'v1.0.0'} or len(sys.argv) > 2:
     raise SystemExit('unsupported version')
 metadata = (ROOT / 'metadata.yaml').read_text(encoding='utf-8')
 if f'version: {version}' not in metadata.splitlines():
