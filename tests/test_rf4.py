@@ -59,7 +59,19 @@ class LookupTests(unittest.TestCase):
         data = {'fish': [None, {'name': '白北鲑幼鱼'}, {'name': '白北鲑'}] + [{'name': '白北鲑' + str(i)} for i in range(8)]}
         result = search(data, 'fish', '白北鲑')
         self.assertEqual(result[0]['name'], '白北鲑')
-        self.assertEqual(len(result), 5)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(len(search(data, 'fish', '白北')), 5)
+
+    def test_exact_name_wins_over_alias_and_substrings(self):
+        exact = {'name': '欧鳊'}
+        data = {'fish': [{'name': '东方欧鳊'}, {'name': '其他鱼', 'aliases': ['欧鳊']}, exact, {'name': '上口欧鳊'}]}
+        self.assertEqual(search(data, 'fish', ' 欧鳊 '), [exact])
+        data['fish'].remove(exact)
+        self.assertEqual(search(data, 'fish', '欧鳊'), [{'name': '其他鱼', 'aliases': ['欧鳊']}])
+
+    def test_packaged_bream_is_single_exact_result(self):
+        data = load_data(Path(__file__).resolve().parents[1] / 'data' / 'fish_snapshot.json')
+        self.assertEqual([r['name'] for r in search(data, 'fish', '欧鳊')], ['欧鳊'])
 
     def test_url_encoded(self):
         result = web_links('白北鲑 & x')

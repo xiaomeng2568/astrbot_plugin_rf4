@@ -35,6 +35,8 @@ def search(data, category, query):
     if not query:
         return []
     results = []
+    exact_names = []
+    exact_aliases = []
     for row in data.get(category, []):
         if not isinstance(row, dict):
             continue
@@ -45,11 +47,14 @@ def search(data, category, query):
         aliases = row.get("aliases", [])
         if isinstance(aliases, list):
             candidates.extend(aliases)
+            if query in [clean(v, 100).casefold() for v in aliases]:
+                exact_aliases.append(row)
+        if clean(row.get('name'), 100).casefold() == query:
+            exact_names.append(row)
         values = [clean(v, 100).casefold() for v in candidates]
         if any(query in value for value in values):
             results.append(row)
-    results.sort(key=lambda row: clean(row.get("name")).casefold() != query)
-    return results[:MAX_RESULTS]
+    return (exact_names or exact_aliases or results)[:MAX_RESULTS]
 
 
 def source_line(row):
