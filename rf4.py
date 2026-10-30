@@ -5,6 +5,11 @@ import json
 from pathlib import Path
 from urllib.parse import quote
 
+if __package__:
+    from .bait_names import localize_bait
+else:
+    from bait_names import localize_bait
+
 MAX_DATA_BYTES = 4 * 1024 * 1024
 MAX_RESULTS = 5
 
@@ -99,7 +104,7 @@ def fish_line(row, price=False):
     if isinstance(record, dict) and any(clean(record.get(k)) for k in ('weight', 'water', 'bait')):
         scope = clean(record.get('scope')) or '范围尚未明确'
         checked = clean(record.get('snapshot_at') or record.get('checked_at')) or '核对日期尚未明确'
-        lines.append(f"榜单记录（{scope}，{checked}）：{clean(record.get('weight')) or '尚未明确'}，来自 {clean(record.get('water')) or '尚未明确'}，饵料：{clean(record.get('bait')) or '尚未明确'}")
+        lines.append(f"榜单记录（{scope}，{checked}）：{clean(record.get('weight')) or '尚未明确'}，来自 {clean(record.get('water')) or '尚未明确'}，饵料：{localize_bait(clean(record.get('bait')))}")
     else:
         lines.append('榜单记录：尚未明确')
     return "\n".join(lines)

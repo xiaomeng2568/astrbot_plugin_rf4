@@ -26,8 +26,8 @@ class LookupTests(unittest.TestCase):
         row = {"name": "欧鳊", "trophy": "4.4 kg", "blue": "7 kg",
                "weight_range": {"min": "100 g", "max": "8 kg"},
                "distribution": [{"water": "水域1", "max_weight": "8 kg"}, {"water": "水域2"}],
-               "record": {"weight": "5 kg", "water": "水域1", "bait": "蚯蚓", "scope": "中国区", "checked_at": "2026-10-29"}}
-        self.assertEqual(fish_line(row), "欧鳊  ⭐上星 4.4 kg  ✨蓝冠 7 kg\n重量：100 g～8 kg\n分布：水域1（最大 8 kg）\n　　　水域2（最大 尚未明确）\n榜单记录（中国区，2026-10-29）：5 kg，来自 水域1，饵料：蚯蚓")
+               "record": {"weight": "5 kg", "water": "水域1", "bait": "自定义饵A", "scope": "中国区", "checked_at": "2026-10-29"}}
+        self.assertEqual(fish_line(row), "欧鳊  ⭐上星 4.4 kg  ✨蓝冠 7 kg\n重量：100 g～8 kg\n分布：水域1（最大 8 kg）\n　　　水域2（最大 尚未明确）\n榜单记录（中国区，2026-10-29）：5 kg，来自 水域1，饵料：自定义饵A（尚未明确）")
         self.assertIn('分布：下通古斯卡河（最大 尚未明确）', fish_line(self.row))
 
     def test_price_is_labeled_as_estimate(self):

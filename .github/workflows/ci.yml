@@ -17,7 +17,7 @@ jobs:
       - name: 运行离线测试
         run: python -m unittest discover -s tests -v
       - name: 校验正式版安装包
-        run: python .github/scripts/package.py v1.0.2
+        run: python .github/scripts/package.py v1.0.3
   astrbot-411:
     runs-on: ubuntu-latest
     steps:
@@ -39,16 +39,16 @@ jobs:
         with:
           python-version: '3.12'
       - name: 打包正式版
-        run: python .github/scripts/package.py v1.0.2
-      - name: 发布 v1.0.2 正式版
+        run: python .github/scripts/package.py v1.0.3
+      - name: 发布 v1.0.3 正式版
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if gh release view v1.0.2 >/dev/null 2>&1; then
+          if gh release view v1.0.3 >/dev/null 2>&1; then
             echo '发行版已经存在，保留已有发行版。'
             exit 0
           fi
-          gh release create v1.0.2 dist/astrbot_plugin_rf4-v1.0.2.zip dist/astrbot_plugin_rf4-v1.0.2.zip.sha256 --target "$GITHUB_SHA" --latest --title 'v1.0.2 正式版' --notes-file .github/release-notes-102.md
+          gh release create v1.0.3 dist/astrbot_plugin_rf4-v1.0.3.zip dist/astrbot_plugin_rf4-v1.0.3.zip.sha256 --target "$GITHUB_SHA" --latest --title 'v1.0.3 正式版' --notes-file .github/release-notes-103.md
   preview-release:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: tests

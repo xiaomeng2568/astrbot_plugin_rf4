@@ -1,4 +1,4 @@
-# 俄钓查询 · v1.0.2
+# 俄钓查询 · v1.0.3
 
 AstrBot 的俄罗斯钓鱼4资料查询插件。内置251条鱼种、19张地图清单和国际绝对榜快照，QQ以纯文本回复。
 
@@ -27,7 +27,7 @@ AstrBot 的俄罗斯钓鱼4资料查询插件。内置251条鱼种、19张地图
 
 ## 安装与升级
 
-从Release下载 `astrbot_plugin_rf4-v1.0.2.zip`，通过AstrBot安装，或覆盖 `data/plugins/astrbot_plugin_rf4` 后重载。要求AstrBot >=4.11.0，无新增第三方依赖。
+从Release下载 `astrbot_plugin_rf4-v1.0.3.zip`，通过AstrBot安装，或覆盖 `data/plugins/astrbot_plugin_rf4` 后重载。要求AstrBot >=4.11.0，无新增第三方依赖。
 
 默认读取内置快照。若 `data/plugin_data/astrbot_plugin_rf4/rf4_data.json` 存在，则优先读取该文件；也可以在设置填写自定义文件路径。升级会继续使用已有自定义数据，要使用新版内置数据，请备份后移走自定义文件，并清空自定义路径。不要卸载清理数据。
 
@@ -44,3 +44,7 @@ AstrBot 的俄罗斯钓鱼4资料查询插件。内置251条鱼种、19张地图
 运行 `python -m unittest discover -s tests -v`；`python data_audit.py` 生成缺失清单。CI覆盖Windows/Linux、Python3.11/3.12，并校验安装包。已核对官方v4.11.0源码的插件注册、配置、指令、数据路径和纯文本回复接口，CI会重复核对；4.11服务器完整启动及QQ实测仍待验收。
 
 代码采用MIT许可证，外部数据与游戏素材的权利归原权利人。
+
+## 饵料本地化
+
+饵料对照保存在 `data/bait_names.json`，逐条保留中文、英文、俄文及来源。中文游戏中沿用英文的商品名原样显示；未核实的保留原文并标注“尚未明确”。现用143个不同饵名已确认45个中文显示名，其余仍待补，不强行翻译。词库结构和覆盖范围见 [BAIT_NAMES.md](BAIT_NAMES.md)。
