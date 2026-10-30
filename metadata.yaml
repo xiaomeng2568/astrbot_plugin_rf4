@@ -1,7 +1,7 @@
 name: astrbot_plugin_rf4
 display_name: 俄钓查询
 desc: 俄钓4鱼种、重量、水域和国际绝对榜快照查询；纯文本输出，未确认字段标注尚未明确。
-version: v1.0.0
+version: v1.0.1
 author: xiaomeng2568
 repo: https://github.com/xiaomeng2568/astrbot_plugin_rf4
-astrbot_version: ">=4.25.3"
+astrbot_version: ">=4.11.0"

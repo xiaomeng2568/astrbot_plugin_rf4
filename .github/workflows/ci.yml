@@ -17,10 +17,19 @@ jobs:
       - name: 运行离线测试
         run: python -m unittest discover -s tests -v
       - name: 校验正式版安装包
-        run: python .github/scripts/package.py v1.0.0
-  release-100:
+        run: python .github/scripts/package.py v1.0.1
+  astrbot-411:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 核对 AstrBot 4.11.0 官方接口
+        run: python .github/scripts/check_astrbot_compat.py
+  release-stable:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: tests
+    needs: [tests, astrbot-411]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -30,16 +39,16 @@ jobs:
         with:
           python-version: '3.12'
       - name: 打包正式版
-        run: python .github/scripts/package.py v1.0.0
-      - name: 发布 v1.0.0 正式版
+        run: python .github/scripts/package.py v1.0.1
+      - name: 发布 v1.0.1 正式版
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if gh release view v1.0.0 >/dev/null 2>&1; then
+          if gh release view v1.0.1 >/dev/null 2>&1; then
             echo '发行版已经存在，保留已有发行版。'
             exit 0
           fi
-          gh release create v1.0.0 dist/astrbot_plugin_rf4-v1.0.0.zip dist/astrbot_plugin_rf4-v1.0.0.zip.sha256 --target "$GITHUB_SHA" --latest --title 'v1.0.0 正式版' --notes-file .github/release-notes-100.md
+          gh release create v1.0.1 dist/astrbot_plugin_rf4-v1.0.1.zip dist/astrbot_plugin_rf4-v1.0.1.zip.sha256 --target "$GITHUB_SHA" --latest --title 'v1.0.1 正式版' --notes-file .github/release-notes-101.md
   preview-release:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: tests
