@@ -38,13 +38,13 @@ class PluginTests(unittest.IsolatedAsyncioTestCase):
             plugin = load_plugin(tmp)
             event = types.SimpleNamespace(get_group_id=lambda: '', plain_result=lambda v: v)
             result = [x async for x in plugin.fish(event, '白北鲑')][0]
-            self.assertIn('上星：25 kg', result)
-            self.assertIn('蓝冠：30 kg', result)
+            self.assertIn('上星 25 kg', result)
+            self.assertIn('蓝冠 30 kg', result)
             plugin.data_dir.mkdir(parents=True)
             (plugin.data_dir / 'rf4_data.json').write_text(json.dumps({'fish': [{'name': '白北鲑', 'trophy': '25 kg'}]}, ensure_ascii=False), encoding='utf-8')
             result = [x async for x in plugin.fish(event, '白北鲑')][0]
-            self.assertIn('上星：25 kg', result)
-            self.assertIn('蓝冠：未知', result)
+            self.assertIn('上星 25 kg', result)
+            self.assertIn('蓝冠 尚未明确', result)
 
     async def test_group_disabled(self):
         with tempfile.TemporaryDirectory() as tmp:
